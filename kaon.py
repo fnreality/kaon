@@ -95,7 +95,7 @@ def context_iterator(ctx):
     for _, i in ctx.access.items():
         yield i.get()
 
-class AbstractCtx(ABC):
+class Entity(ABC):
     @abstractmethod
     def __init__(self, given_value):
         raise NotImplementedError
@@ -120,7 +120,6 @@ class AbstractCtx(ABC):
     def __hash__(self):
         return self.given_value.__hash__()
 
-class FileCtx(AbstractCtx):
     def __init__(self, given_value):
         self.filename = given_value
 
