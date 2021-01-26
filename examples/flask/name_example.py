@@ -13,7 +13,7 @@ def page_root_update():
     return ctx.render(file= 'index.kaon.html')
 
 ctx = kaon.Context({
-    'name': kaon.FileCtx('name.txt')
+    'name': kaon.FileEntity('name.txt')
 })
 
 def update_name(ctx, req):
