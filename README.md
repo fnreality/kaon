@@ -5,7 +5,7 @@ Simple Example:
 
 ```python
 import kaon
-ctx = kaon.Context({ 'file': kaon.FileCtx('example.txt') })
+ctx = kaon.Context({ 'file': kaon.FileEntity('example.txt') })
 
 def hello_world(ctx):
     return 'file', 'Hello, world!'
