@@ -97,6 +97,11 @@ def context_iterator(ctx):
 
 class Entity(ABC):
     @abstractmethod
+    def __init__(self, given_value):
+        raise NotImplementedError
+        return NotImplemented
+
+    @abstractmethod
     def get(self):
         raise NotImplementedError
         return NotImplemented
