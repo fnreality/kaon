@@ -97,11 +97,6 @@ def context_iterator(ctx):
 
 class Entity(ABC):
     @abstractmethod
-    def __init__(self, given_value):
-        raise NotImplementedError
-        return NotImplemented
-
-    @abstractmethod
     def get(self):
         raise NotImplementedError
         return NotImplemented
@@ -120,8 +115,9 @@ class Entity(ABC):
     def __hash__(self):
         return self.given_value.__hash__()
 
-    def __init__(self, given_value):
-        self.filename = given_value
+class FileEntity(Entity):
+    def __init__(self, filename):
+        self.filename = filename
 
     def get(self):
         with open(self.filename, 'r') as f:
