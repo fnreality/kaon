@@ -69,7 +69,7 @@ class Concept(object):
         with multiprocessing.Pool() as pool:
             instant_dict = dict(list(pool.map(
                 self.process_instant,
-                instants
+                list(instants)
             )))
         self.ctx.pushed.append(instant_dict)
 
