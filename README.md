@@ -1,5 +1,5 @@
 # kaon
-An asynchronous but coordinated database that holds portals instead of data
+An asynchronous database that holds portals instead of data
 
 Simple Example:
 
