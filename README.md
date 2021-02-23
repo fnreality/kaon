@@ -1,5 +1,5 @@
 # kaon
-An asynchronous STM where everything is a file, a database that holds portals instead of data. 
+An asynchronous but coordinated database that holds portals instead of data
 
 Simple Example:
 
