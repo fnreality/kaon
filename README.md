@@ -1,5 +1,5 @@
 # kaon
-An asynchronous database that holds portals instead of data
+An asynchronous database that holds portals instead of data. (Technically, an STM for coordinated but asynchronous abstract state managment)
 
 Simple Example:
 
