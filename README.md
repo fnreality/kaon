@@ -1,5 +1,5 @@
 # kaon
-A database you can put almost anything in, because its actually a portal. 
+An asynchronous STM where everything is a file, a database that holds portals instead of data. 
 
 Simple Example:
 
